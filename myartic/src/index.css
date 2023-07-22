@@ -1,13 +1,69 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+  --main-bg-color: #15A3A6;
+  --title-color: #002D42;
+
+  
+}
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  width: 100%;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #92CC6F;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: var(--main-bg-color);
+}
+.content {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+}
+.blog-list{
+  display: flex;
+  
+}
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(31, 109, 61, 0.2);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+.blog-preview--author{
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: right;
+  color: var(--title-color);
 }
