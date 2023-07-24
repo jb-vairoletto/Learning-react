@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
-    
     const [data,setData] = useState(null);
     const [isPending,setIsPending] = useState(true);
     const [error,setError] = useState(null);
@@ -22,8 +21,9 @@ const useFetch = (url) => {
         })
         .catch(err => {
             setError(err.message);
-            setIsPending(false);
-        })  
+            setIsPending(false);            
+        })
+        
     },[url]);
 
     return {data, isPending, error}
