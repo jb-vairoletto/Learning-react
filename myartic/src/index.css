@@ -70,3 +70,39 @@
 .blog-preview a{
   text-decoration: none;
 }
+/*
+contact.js
+*/
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-form label {
+  text-align: left;
+  display: block;
+  margin: 10px 0;
+}
+.contact-form h2 {
+  font-size: 20px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+}
+.contact-form input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.contact-form button {
+  background: var(--main-bg-color);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
