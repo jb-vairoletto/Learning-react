@@ -1,8 +1,9 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './navbar';
 import Home from './Home';
 import AboutUs from './AboutUs';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Tour from './Tour';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
               
             </Route>
             <Route path="/contact">
-              
+              <Contact/>
             </Route>
             <Route path="/tour/:id">
               <Tour/>
